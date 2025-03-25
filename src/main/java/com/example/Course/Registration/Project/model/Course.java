@@ -26,5 +26,4 @@ public class Course {
         this.durationInWeeks = durationInWeeks;
     }
 
-
 }
