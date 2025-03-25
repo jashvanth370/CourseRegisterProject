@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>availablecorses</title>
+    <script src="script.js" type="text/javascript"></script>
+    <style>
+        td{
+            background-color: aliceblue;
+        }
+        body{
+            padding: 50px;
+            background-color:aliceblue;
+        }
+        h1{
+            text-align: center;
+            color: rgb(123, 115, 115);
+        }
+    </style>
+</head>
+<body>
+    <h1>AVAILABLE COURSES </h1>
+
+    <table align="center" border="1" style="background-color: black;">
+        <tr align="center" style="background-color: lightblue;">
+            <th width="100">Course Id</th>
+            <th width="150">Course Name</th>
+            <th width="150">Trainer</th>
+            <th width="140">Duration in weeks</th>
+        </tr>
+
+        <tbody align="center" id="coursetable"></tbody> <!--Table body where rows will be inserted -->
+    </table>
+
+
+    <script type="text/javascript">
+        window.onload=function(){
+            showCourses();
+        }
+    </script>
+</body>
+</html>

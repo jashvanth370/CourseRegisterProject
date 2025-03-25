@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <style>
+        body {
+            background-color:aliceblue;
+            text-align: center; 
+        }
+        form {
+            margin:  auto;
+            padding: 20px;
+            width: 400px; 
+            background-color: #fff;
+            border-radius: 5%;
+            background-color: aliceblue;
+        }
+
+        input, select, button {
+            width: 90%;
+            padding: 10px;
+            margin: 10px;
+        }
+
+        button {
+            background-color: #4CAF50;
+            color: white; 
+            font-weight: bold;
+            font-size: medium;
+            cursor: pointer; 
+        }
+
+        button:hover {
+            background-color: #104212; 
+        }
+    
+    </style>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>register</title>
+</head>
+<body>
+    <h1 style="color: brown;">REGISTER A COURSE</h1>
+    <form action="http://localhost:8090/courses/register" method="post">
+        <label for="name">Name : </label>
+        <input type="text" name="name"> <br>
+
+        <label for="emailId"> Email ID : </label>
+        <input type="text" name="emailId"> <br>
+
+        <label for="courseName">Course Name :  </label>
+        <select name="courseName" id="courseName">
+            <option value="java">Java</option>
+            <option value="javascript"> JavaScript</option>
+            <option value="springBoot"> Spring Boot</option>
+        </select>
+
+        <input type="submit">
+    </form>
+</body>
+</html>
